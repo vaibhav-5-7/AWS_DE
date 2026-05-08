@@ -1,0 +1,35 @@
+[
+  {
+    "batch_id": "BATCH_001",
+    "customer_id": "CUST_001",
+    "country": "in",
+    "amount": "1200.5",
+    "currency": "inr",
+    "event_time": "2026-05-08T10:30:00Z"
+  },
+  {
+    "batch_id": "BATCH_001",
+    "customer_id": "CUST_002",
+    "country": "us",
+    "amount": "99.99",
+    "currency": "usd",
+    "event_time": "2026-05-08T11:00:00Z"
+  },
+  {
+    "batch_id": "BATCH_001",
+    "customer_id": "",
+    "country": "in",
+    "amount": "10",
+    "currency": "inr",
+    "event_time": "2026-05-08T11:15:00Z"
+  },
+  {
+    "batch_id": "BATCH_001",
+    "customer_id": "CUST_004",
+    "country": "uk",
+    "amount": "BAD_AMOUNT",
+    "currency": "gbp",
+    "event_time": "2026-05-08T11:30:00Z"
+  }
+]
+

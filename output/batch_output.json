@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "input_count": 4,
+    "success_count": 2,
+    "rejected_count": 2
+  },
+  "valid_records": [
+    {
+      "batch_id": "BATCH_001",
+      "customer_id": "CUST_001",
+      "country": "IN",
+      "amount": "1200.50",
+      "currency": "INR",
+      "event_time_utc": "2026-05-08T10:30:00+00:00",
+      "is_high_value": true
+    },
+    {
+      "batch_id": "BATCH_001",
+      "customer_id": "CUST_002",
+      "country": "US",
+      "amount": "99.99",
+      "currency": "USD",
+      "event_time_utc": "2026-05-08T11:00:00+00:00",
+      "is_high_value": false
+    }
+  ],
+  "rejected_records": [
+    {
+      "batch_id": "BATCH_001",
+      "customer_id": "",
+      "country": "in",
+      "amount": "10",
+      "currency": "inr",
+      "event_time": "2026-05-08T11:15:00Z",
+      "error": "customer_id is required"
+    },
+    {
+      "batch_id": "BATCH_001",
+      "customer_id": "CUST_004",
+      "country": "uk",
+      "amount": "BAD_AMOUNT",
+      "currency": "gbp",
+      "event_time": "2026-05-08T11:30:00Z",
+      "error": "Invalid amount: BAD_AMOUNT"
+    }
+  ]
+}
